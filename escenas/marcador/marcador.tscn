@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bcxwt4l1fbwjd"]
+
+[ext_resource type="Script" uid="uid://c570hiq8qmb5y" path="res://escenas/marcador/marcador.gd" id="1_wu0d3"]
+[ext_resource type="AudioStream" uid="uid://cu2o6hitr1jhf" path="res://assets/sfx/Complete_02.wav" id="2_ll0sm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cuug3"]
+font_size = 45
+
+[sub_resource type="LabelSettings" id="LabelSettings_ll0sm"]
+font_size = 45
+
+[sub_resource type="LabelSettings" id="LabelSettings_7he6k"]
+font_size = 45
+
+[node name="marcador" type="CanvasLayer" unique_id=980217888]
+script = ExtResource("1_wu0d3")
+
+[node name="Control" type="Control" parent="." unique_id=1191456767]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 25.0
+grow_horizontal = 2
+
+[node name="marcador_izquierdo" type="Label" parent="Control" unique_id=1721115132]
+layout_mode = 1
+offset_right = 78.0
+offset_bottom = 25.0
+label_settings = SubResource("LabelSettings_cuug3")
+horizontal_alignment = 1
+
+[node name="marcador_central" type="Label" parent="Control" unique_id=31401255]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -31.5
+offset_right = 31.5
+offset_bottom = 25.0
+grow_horizontal = 2
+label_settings = SubResource("LabelSettings_ll0sm")
+horizontal_alignment = 1
+
+[node name="marcador_derecho" type="Label" parent="Control" unique_id=420676471]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -78.0
+offset_bottom = 25.0
+grow_horizontal = 0
+label_settings = SubResource("LabelSettings_7he6k")
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1574295985]
+stream = ExtResource("2_ll0sm")

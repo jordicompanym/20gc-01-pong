@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bam7rww3l0twv"]
+
+[ext_resource type="PackedScene" uid="uid://bcxwt4l1fbwjd" path="res://escenas/marcador/marcador.tscn" id="1_6ajmc"]
+[ext_resource type="PackedScene" uid="uid://v756ls1h262x" path="res://escenas/bordes/bordes.tscn" id="1_6dlj0"]
+[ext_resource type="Script" uid="uid://dthdc0lqenl0r" path="res://escenas/arena/arena.gd" id="1_oou7c"]
+[ext_resource type="Script" uid="uid://dkx05uts3vaam" path="res://escenas/red/red.gd" id="2_r347v"]
+[ext_resource type="PackedScene" uid="uid://c8ym724bdfcea" path="res://escenas/paleta/paleta.tscn" id="3_oou7c"]
+[ext_resource type="PackedScene" uid="uid://bid1r2w57opyg" path="res://escenas/pelota/pelota.tscn" id="4_r347v"]
+[ext_resource type="AudioStream" uid="uid://b0u3xbmnw355k" path="res://assets/sfx/703543__yoshicakes77__win.ogg" id="7_awrpk"]
+
+[node name="arena" type="Node2D" unique_id=1888996139]
+script = ExtResource("1_oou7c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1688864757]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 0.44
+color = Color(0, 0, 0, 1)
+
+[node name="red" type="Node2D" parent="." unique_id=152669146]
+script = ExtResource("2_r347v")
+
+[node name="bordes" parent="." unique_id=1186906062 instance=ExtResource("1_6dlj0")]
+
+[node name="marcador" parent="." unique_id=980217888 instance=ExtResource("1_6ajmc")]
+
+[node name="jugador_izquierdo" parent="." unique_id=1901936829 instance=ExtResource("3_oou7c")]
+position = Vector2(127, 245)
+tecla_arriba = "arriba"
+tecla_abajo = "abajo"
+
+[node name="jugador_derecho" parent="." unique_id=1572275807 instance=ExtResource("3_oou7c")]
+position = Vector2(1004, 244)
+
+[node name="pelota" parent="." unique_id=313210491 instance=ExtResource("4_r347v")]
+position = Vector2(579, 320)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=660253625]
+stream = ExtResource("7_awrpk")

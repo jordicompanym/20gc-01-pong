@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bid1r2w57opyg"]
+
+[ext_resource type="Script" uid="uid://bcfreup3ho7f8" path="res://escenas/pelota/pelota.gd" id="1_wvm6p"]
+[ext_resource type="AudioStream" uid="uid://vn3dcxk5x3vm" path="res://assets/sfx/Bleep_04.wav" id="2_r8t0a"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wvm6p"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wvm6p"]
+
+[node name="pelota" type="RigidBody2D" unique_id=313210491]
+physics_material_override = SubResource("PhysicsMaterial_wvm6p")
+gravity_scale = 0.0
+can_sleep = false
+script = ExtResource("1_wvm6p")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=407928839]
+offset_right = 14.0
+offset_bottom = 14.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=575763642]
+position = Vector2(7, 7)
+shape = SubResource("CircleShape2D_wvm6p")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=297352258]
+stream = ExtResource("2_r8t0a")

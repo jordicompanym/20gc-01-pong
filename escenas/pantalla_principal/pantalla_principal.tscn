@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dl7ppppdepots"]
+
+[ext_resource type="Script" uid="uid://ce8f5nhsw6sfp" path="res://escenas/pantalla_principal/pantalla_principal.gd" id="1_bfk8u"]
+
+[node name="pantalla_principal" type="Control" unique_id=1222048766]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bfk8u")
+
+[node name="empezar" type="Button" parent="." unique_id=1450357814]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -57.0
+offset_right = 107.0
+offset_bottom = 4.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nueva partida"
+icon_alignment = 1
+
+[node name="salir" type="Button" parent="." unique_id=1445998982]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = 16.0
+offset_right = 107.0
+offset_bottom = 77.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Salir"
+icon_alignment = 1
+
+[connection signal="pressed" from="empezar" to="." method="empezar"]
+[connection signal="pressed" from="salir" to="." method="salir"]
