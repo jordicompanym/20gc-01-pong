@@ -6,6 +6,8 @@ My take on classic Pong, built in Godot 4.6 as **game 1** of the [20 Games Chall
 
 ![Game screenshot](captura_pong.png)
 
+You can try it at [itch.io](https://visualbytesgames.itch.io/pong-classic)
+
 ## Original Pong
 
 Pong is one of the oldest and most important video games in history. Its direct predecessor is *Tennis for Two* (1958), created by William Higinbotham, which ran on an oscilloscope as a display and an analog computer to calculate the "ball" trajectory. Fourteen years later, in 1972, Atari released *Pong* to arcades and it became the hit that kicked off the video game industry as we know it today.

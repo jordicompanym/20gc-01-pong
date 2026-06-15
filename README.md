@@ -6,6 +6,8 @@ Mi versión del clásico Pong, hecha en Godot 4.6 como **juego 1** del [20 Games
 
 ![Captura del juego](captura_pong.png)
 
+Puedes probarlo en [itch.io](https://visualbytesgames.itch.io/pong-classic)
+
 ## Pong original
 
 Pong es uno de los videojuegos más antiguos e importantes de la historia. Su antecesor directo es *Tennis for Two* (1958), creado por William Higinbotham, que se jugaba sobre un osciloscopio como pantalla y un ordenador analógico para calcular la trayectoria de la "pelota". Catorce años después, en 1972, Atari sacó *Pong* a las recreativas y se convirtió en el pelotazo (con perdón) que dio el pistoletazo de salida a la industria del videojuego tal y como la conocemos hoy.
